@@ -1,0 +1,27 @@
+
+
+.grid1 {
+    display: grid;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid1 > div:nth-child(n + 4) {
+    display: grid;
+    align-items: center;
+    gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.grid > div > img {
+    min-width: 100%;
+}
+
+.grid1 > div.anuncio {
+    border-top:5px solid tomato;
+    grid-column: 1;
+    grid-row: 2/5;
+    display: block;
+}
